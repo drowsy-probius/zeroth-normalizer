@@ -6,7 +6,7 @@
 
 # Installation
 
-```
+```bash
 python3 -m pip install zeroth-normalizer 
 ```
 
@@ -14,7 +14,7 @@ python3 -m pip install zeroth-normalizer
 
 See also [test.py](/test.py)
 
-```
+```python
 from zeroth_normalizer import ZerothKoreanNormalizer
 normalizer = ZerothKoreanNormalizer()
 normalizer('your text here', steps=4)
@@ -22,7 +22,7 @@ normalizer('your text here', steps=4)
 
 # Examples
 
-```
+```raw
 원문:    대왕 대비가 대행왕이 예(睿)로써 시호를 삼도록 말했었다고 알리다
 step1:   대왕 대비가 대행왕이 예로써 시호를 삼도록 말했었다고 알리다
 step2:   대왕 대비가 대행왕이 예로써 시호를 삼도록 말했었다고 알리다
