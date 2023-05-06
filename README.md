@@ -3,11 +3,12 @@
 [Project: Zeroth](https://github.com/goodatlas/zeroth)에서 한국어를 처리할 때 사용된 normalizer코드를 다른 작업에 적용할 수 있도록 외부 모듈로 분리하였습니다.
 
 - 함수 타입 적용 및 전체 코드 클래스로 분리
+- 클래스 선언에서는 [openai/whisper](https://github.com/openai/whisper)의 `BasicTextNormalizer`를 참고했습니다.
 
 # Installation
 
 ```bash
-python3 -m pip install zeroth-normalizer 
+python3 -m pip install zeroth-normalizer
 ```
 
 # Usage
@@ -17,7 +18,7 @@ See also [test.py](/test.py)
 ```python
 from zeroth_normalizer import ZerothKoreanNormalizer
 normalizer = ZerothKoreanNormalizer()
-normalizer('your text here', steps=4)
+normalizer('여기에 한국어 텍스트 입력', steps=4)
 ```
 
 # Examples
